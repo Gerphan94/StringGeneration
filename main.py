@@ -6,7 +6,6 @@ import string
 class Ui_MainUI(object):
     def setupUi(self, MainUI):
         MainUI.setObjectName("MainUI")
-        #MainUI.resize(225, 469)
         MainUI.setFixedSize(220, 520)
         self.CWidget = QtWidgets.QWidget(MainUI)
         self.CWidget.setObjectName("CWidget")
@@ -36,13 +35,10 @@ class Ui_MainUI(object):
         self.cb3.setGeometry(QtCore.QRect(10, 50, 150, 24))
         self.cb3.setObjectName("cb3")
         self.cb3.setText("Lowercase letters (a-z)")
-
-      
         self.cb4 = QtWidgets.QCheckBox(self.GB1)
         self.cb4.setGeometry(QtCore.QRect(10, 70, 150, 24))
         self.cb4.setObjectName("cb4")
         self.cb4.setText("Special character (!@#...)")
-
         self.GB2 = QtWidgets.QGroupBox(self.CWidget)
         self.GB2.setGeometry(QtCore.QRect(20, 170, 181, 80))
         self.GB2.setTitle("")
@@ -57,16 +53,13 @@ class Ui_MainUI(object):
         self.edt1.setText("255")
         rx = QtCore.QRegExp("[1-9][0-9]{,4}")
         self.edt1.setValidator(QtGui.QRegExpValidator(rx))
-
         self.lb2 = QtWidgets.QLabel(self.GB2)
         self.lb2.setGeometry(QtCore.QRect(10, 40, 100, 24))
         self.lb2.setObjectName("lb12")
         self.lb2.setText("Paragraph Length:")
-
         self.spin = QtWidgets.QSpinBox(self.GB2)
         self.spin.setGeometry(QtCore.QRect(110, 40, 50, 24))
         self.spin.setRange(0,10)
-
         self.GB3 = QtWidgets.QGroupBox(self.CWidget)
         self.GB3.setGeometry(QtCore.QRect(20, 260, 181, 40))
         self.GB3.setTitle("")
@@ -100,7 +93,6 @@ class Ui_MainUI(object):
         self.staB.setObjectName("staB")
         self.staB.showMessage("...")
         MainUI.setStatusBar(self.staB)
-        
         QtCore.QMetaObject.connectSlotsByName(MainUI)
 
     def getString(self):

@@ -1,2 +1,2 @@
 # StringGeneration
- Tạo chuỗi ngẫu nheien
+ Tạo chuỗi ngẫu nhiên
